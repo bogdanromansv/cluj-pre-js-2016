@@ -2,31 +2,42 @@
 <html>
   <head>
     <title>Register page</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
   </head>
 <body background="images/banner-top.jpg">
-  <h1>Sign up for an ACME account</h1>
-                <br>
-  <h2>Get Started Absolutely FREE</h2>
-  <h3>NO CREDIT CARD NEEDED</h3>
-  <form>
-      Your name<br>
-    <input type="text" name="yourname"><br>
-  </form>
+  <div>
+    <br>
+    <h2>Sign up for an ACME account</h2>
 
-  <form>
-      Email<br>
-    <input type="email" name="email">
-  </form>
+    <h3>Get Started Absolutely FREE</h3>
+    <h4>NO CREDIT CARD NEEDED</h4>
+    <form>
+      <span>
+      Your name</span>
 
-  <form>
-      Password<br>
-    <input type="password" name="psw">
-  </form>
+      <br>
+    <input type="text" name="yourname" required>
+    <br><br>
+      <span>
+      Email
+      </span>
 
-  <button onclick="myFunction()">Sign up free</button>
+      <br>
+    <input type="email" name="email" required>
+    <br><br>
+    <span>
+      Password
+    </span>
 
-  <p>By clicking "Sign Up Free" I agree to ACME's
+      <br>
+    <input type="password" name="psw" required> <br><br>
+
+    <button onclick="myFunction()">Sign up free</button>
+    </form>
+
+    <p>By clicking "Sign Up Free" I agree to ACME's
     <a href="http://termsofservices.com">Terms of Service.</a></p>
 
+  </div>
   </body>
 </html>

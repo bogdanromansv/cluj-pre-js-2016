@@ -2,29 +2,36 @@
 <html>
 <head>
     <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
-  <body background="images/banner-app.jpg">
+  <body>
+    <div>
+      <br>
+      <img id="img" src="images/logo-color.png" alt="ACME logo">
 
-      <img src="images/logo-color.png" alt="ACME logo">
-
-      <h1>Sign into your ACME account</h1>
+      <h2>Sign into your ACME account</h2>
       <form>
-          Email<br>
-          <input type="email" name="email">
+        <span>
+          Email
+        </span>
+          <br>
+          <input  type="email" name="email" required>
+          <br>
+          <br>
+          <span>
+          Password
+          </span>
+          <br>
+          <input type="password" name="psw" required>
+          <br>
+          <br>
+          <span> <a href="http://acmepasschange.com">Forgot password?</a>
+          <button onclick="myFunction()">Sign In</button></span>
       </form>
-
-      <form>
-          Password<br>
-          <input type="password" name="psw">
-      </form>
-
-      <a href="http://acmepasschange.com">Forgot password?</a>
-
-      <button onclick="myFunction()">Sign In</button>
-              <br>
-
+      <br>
       <p>Don't have an account?
           <a href="http://register.com">Sign up here.</a></p>
-
+          <br>
+    </div>
   </body>
 </html>
