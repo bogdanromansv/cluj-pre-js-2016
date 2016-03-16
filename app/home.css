@@ -43,6 +43,20 @@ background-color: white;
 height:100px;
 
 }
+
+div.down{
+  position: relative;
+  background-color: white;
+  height:600px;
+
+}
+
+div.lastdiv{
+  position: relative;
+  background-color: #E5E5E5;
+  height:600px;
+
+}
  div.mleft{
       position: relative;
       float:left;
@@ -120,7 +134,18 @@ h2.headgalaxy{
   margin-top: 70px;
   color:white;
 }
-
+button.home{
+  background-color: #63D1F4;
+  text-align: center;
+  font-size: large;
+  color: white;
+  border:blue;
+  width:15em;
+  height: 3em;
+  margin-left: 700px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 #hm1{
   position: absolute;
   margin-left:700px;
@@ -179,5 +204,52 @@ h2.headgalaxy{
   position:absolute;
   top:300px;
   left: 1300px;
+}
+table{
+  border-collapse:  collapse;
+  width:50%;
+  margin-left: 400px;
+  background-color: #E5E5FF;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+table,th,td {
+  border: 3px solid #63D1F4;
+}
 
+tr{
+  height: 50px;
+}
+
+#devices{
+  float: right;
+}
+
+#logogray{
+  position:absolute;
+  top:100px;
+  left: 200px;
+}
+
+#appstore{
+  position:absolute;
+  top:400px;
+  left: 200px;
+}
+#googlestore{
+  position:absolute;
+  top:400px;
+  left: 400px;
+}
+
+#lasth2{
+  position:absolute;
+  top:200px;
+  left: 200px;
+}
+
+#lastp{
+  position:absolute;
+  top:500px;
+  left: 200px;
 }
