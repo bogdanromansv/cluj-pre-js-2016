@@ -10,6 +10,7 @@ body {
   div{
     background-color: white;
     width: 75%;
+    -webkit-border-radius: 7px;
   }
   img{
       display: block;
@@ -52,5 +53,6 @@ button{
   width:10em;
   height: 2em;
   margin-right: 35px;
+  -webkit-border-radius: 7px;
 
 }
