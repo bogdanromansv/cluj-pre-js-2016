@@ -3,7 +3,7 @@ body{
 }
 
 div.up{
-  background-image: url("images/banner-top.jpg");
+  background-image: url("../core/assets/banner-top.jpg");
   height:500px;
 
 }
@@ -12,15 +12,14 @@ div.upleft{
   float: left;
 }
 
-div.upright{
-  float:right;
-}
+
+
  div.middle2{
-   background-image: url("images/stars-bg.jpg");
+   background-image: url("../core/assets/stars-bg.jpg");
    height:400px;
 
  }
-h1{
+h1.home{
   margin-left: 300px;
   color: white;
 }
@@ -31,12 +30,12 @@ h1{
 }
 
 #par1{
-  margin-left: 300px;
+  margin-left: 35px;
   font-size: large;
   color:white;
 }
 #par2{
-  margin-left: 300px;
+  margin-left: 0px;
   font-size: medium;
   color:#B0B0B0;
 }

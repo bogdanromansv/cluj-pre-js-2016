@@ -3,7 +3,7 @@ body {
   margin-right: auto;
   width: 480px;
   padding: 10px;
-  background-image: url("images/banner-top.jpg");
+  background-image: url("../core/assets/banner-top.jpg");
   font-family: Arial, Helvetica, sans-serif;
 
     }
