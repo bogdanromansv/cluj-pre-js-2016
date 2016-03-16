@@ -1,0 +1,71 @@
+body{
+margin: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+div.divup{
+  position:relative;
+  background-image: url("../core/assets/banner-app.jpg");
+  height:600px;
+}
+
+#buttonS{
+  position: absolute;
+  background-color: #63D1F4;
+  text-align: center;
+  font-size: large;
+  color: white;
+  border:blue;
+  width:10em;
+  height: 2em;
+  top:50px;
+  left: 1500px;
+
+}
+
+#buttonJ{
+  position: absolute;
+  background-color: #B3B300;
+  text-align: center;
+  font-size: large;
+  color: white;
+  border:blue;
+  width:15em;
+  height: 3em;
+  top:250px;
+  left: 700px;
+}
+
+#logomain{
+  position: absolute;
+  top:50px;
+  left: 200px;
+}
+
+#h1main{
+  position: absolute;
+  top:350px;
+  left: 600px;
+}
+
+#h2main{
+  position: absolute;
+  top:150px;
+  left: 650px;
+}
+
+form{
+  position: absolute;
+  top:50px;
+  left: 550px;
+  border: 5px solid grey;
+  border-style: outset;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+input{
+  color: black;
+  height: 25px;
+  width:600px;
+}
