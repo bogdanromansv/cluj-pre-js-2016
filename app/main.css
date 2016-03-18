@@ -30,6 +30,8 @@ div.leftimg{
     margin-left: -100px;
     margin-top: -100px;
     z-index: 10;
+    box-shadow: 0px 3px 3px #000000;
+    transition-duration: 1.5s;
 
 }
 div.leftimg:hover{
@@ -56,6 +58,8 @@ div.rightimg{
     margin-left: -100px;
     margin-top: -100px;
     z-index: 10;
+    box-shadow: 0px 3px 3px #000000;
+    transition-duration: 1.5s;
 }
 div.rightimg:hover{
   margin-top: -175px;
@@ -80,8 +84,10 @@ div.midimg{
     margin-left: -100px;
     margin-top: -100px;
     z-index: 10;
-
+    box-shadow: 0px 3px 3px #000000;
+    transition-duration: 1.5s;
 }
+
 div.midimg:hover{
   margin-top: -175px;
   box-shadow: 0px 20px 20px #888888;
@@ -99,6 +105,8 @@ div.middown{
   background-color: white;
 }
 
+
+
 #buttonS{
   position: absolute;
   background-color: #33CCFF;
@@ -111,6 +119,7 @@ div.middown{
   top:50px;
   left: 1500px;
   -webkit-border-radius: 7px;
+  box-shadow: 0px 3px 3px #000000;
 
 }
 
@@ -126,6 +135,7 @@ div.middown{
   top:270px;
   left: 750px;
   -webkit-border-radius: 7px;
+  box-shadow: 0px 3px 3px #000000;
 }
 
 #explorebtn{
@@ -139,9 +149,11 @@ div.middown{
   margin-left:90px;
   margin-top: 120px;
   opacity: 0.8;
-
+  -webkit-border-radius: 5px;
+  box-shadow: 0px 3px 3px #000000;
 
 }
+
 
 #logomain{
   position: absolute;
@@ -204,7 +216,7 @@ span.textscris{
   opacity: 0.5;
 }
 
-#playlist{
+#playlist2{
   width:700px;
   height:800px;
   position:fixed;
@@ -214,13 +226,44 @@ span.textscris{
   margin-top: -100px;
   z-index: 10;
   background-color: white;
-  opacity:0.8;
+
   display:none;
 
 }
 
+#playlist1{
+  width:700px;
+  height:800px;
+  position:fixed;
+  left: 200px;
+  top: 300px;
+  margin-left: -100px;
+  margin-top: -100px;
+  z-index: 10;
+  background-color: white;
+
+  display:none;
+
+}
+#playlist3{
+  width:700px;
+  height:800px;
+  position:fixed;
+  left: 200px;
+  top: 300px;
+  margin-left: -100px;
+  margin-top: -100px;
+  z-index: 10;
+  background-color: white;
+
+  display:none;
+
+}
+
+
+
 div.close{
-  height:11px;
+  height:22px;
   background-color: white;
 
 }
@@ -233,19 +276,96 @@ div.headerplaylist{
 
 }
 
-div.songs{
 
-
+div.playlisttitles{
+    height:30px;
+    width:670px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E5E5;
+    margin-top:10px;
 }
 
-#X{
-  float: right;
+div.song{
+  height:70px;
+  width:670px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5px;
+  background-color: #E5E5E5;
 }
-#CLOSE{
+
+#buttonCLOSE{
   float:right;
-  font-size: small;
-  color: #33CCFF;
-  margin-right:12px;
+  background-color: white;
+  color:#63D1F4;
+  border:white;
+}
+#playlistimg{
+float:left;
+}
 
+#headersmall{
+  float:left;
+margin-left: 20px;
+margin-top:30px;
+    }
+#headerbig{
+  float:left;
+  margin-left: -95px;
+  margin-top:70px;
+  font-size: x-large;
+  font-weight:bold;
+}
 
+#titleleft{
+    float:left;
+    opacity: 0.4;
+    margin-left: 10px;
+    margin-top:5px;
+
+}
+
+#titleright{
+  float:right;
+  opacity: 0.4;
+  margin-right: 10px;
+  margin-top:5px;
+
+}
+
+#titlemid{
+  opacity: 0.4;
+  margin-right: 30px;
+  margin-top:5px;
+  float:right;
+}
+
+#songleft{
+  float:left;
+  background:blue;
+  height:64px;
+  margin-left: 3px;
+  margin-top: 3px;
+  width:460px;
+
+}
+
+div.songright{
+  float:right;
+  background:yellow;
+  margin-top: 3px;
+  margin-right:3px;
+  height:64px;
+  width:100px;
+
+}
+
+div.songmid{
+  float:right;
+  background:green;
+  margin-top: 3px;
+  margin-right:5px;
+  height:64px;
+  width:90px;
 }

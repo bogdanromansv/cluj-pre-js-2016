@@ -32,12 +32,12 @@
 
       <h3 class="reg">Get Started Absolutely FREE</h3>
       <h4 class="reg">NO CREDIT CARD NEEDED</h4>
-      <form>
+      <form name="regform">
         <span>
         Your name</span>
 
         <br>
-      <input type="text" name="yourname" required>
+      <input name="regname" type="text" name="yourname" required>
       <br><br>
         <span>
         Email
@@ -56,7 +56,7 @@
       <button class="reg" onclick="myFunction()">Sign up free</button>
       </form>
 
-      <p>By clicking "Sign Up Free" I agree to ACME's
+      <p id="preg">By clicking "Sign Up Free" I agree to ACME's
       <a href="http://termsofservices.com">Terms of Service.</a></p>
 
     </div>
@@ -76,17 +76,17 @@
     <div class="mleft">
       <img id="case" src="../core/assets/business-icon.png" alt="business">
       <h3 id="hcase">Good Business</h3>
-      <p id="pcase">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do.</p>
+      <p id="pcase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
     </div>
     <div class="mmid">
       <img id="robot"src="../core/assets/robot-icon.png" alt="robot">
       <h3 id="hrobot">Amazing functionality</h3>
-      <p id="probot">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do.</p>
+      <p id="probot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
     </div>
     <div class="mright">
       <img id="chip" src="../core/assets/performance-icon.png" alt="performance">
       <h3 id="hchip">Optimized for performance</h3>
-      <p id="pchip">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do.</p>
+      <p id="pchip">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
     </div>
   </div>
 </div>
@@ -115,50 +115,50 @@
     <td>Premium</td>
   </tr>
   <tr class="row2">
-    <td rowspan="3"><img id="check" src="../core/assets/galaxy-icon.png" alt="photo">
+    <td rowspan="3" class="nocolor" ><img id="imgtbl" src="../core/assets/galaxy-icon.png" alt="photo">
       Access 35 million songs<br> on-demand and ad-free</td>
-    <td>Listen to Android,iOS,and the web</td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">Listen to Android,iOS,and the web</td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
   </tr>
   <tr class="row3">
-    <td>Store up to 50.000 of your iTunes songs</td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">Store up to 50.000 of your iTunes songs</td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
 
   </tr>
   <tr class="row4">
-    <td>Get recommendations based on your taste</td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">Get recommendations based on your taste</td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
 
   </tr>
   <tr class="row5">
-    <td rowspan="3"><img id="check" src="../core/assets/swiss-army-knife-icon.png" alt="photo">
+    <td rowspan="3" class="nocolor"><img id="imgtbl" src="../core/assets/swiss-army-knife-icon.png" alt="photo">
       Over 50 free <br>premium tools</td>
-    <td>Curated radio for anything you want</td>
-    <td></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">Curated radio for anything you want</td>
+    <td class="borded"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
   </tr>
   <tr class="row6">
-    <td>On-demand access to over 35 million songs</td>
-    <td></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">On-demand access to over 35 million songs</td>
+    <td class="borded"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
 
   </tr>
   <tr class="row7">
-    <td>Ad-free, uninterrupted listening</td>
-    <td></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">Ad-free, uninterrupted listening</td>
+    <td class="borded"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
 
   </tr>
   <tr class="row8">
-    <td rowspan="2">
-      <img id="check" src="../core/assets/storage-icon.png" alt="photo">
+    <td rowspan="2" class="nocolor">
+      <img id="imgtbl" src="../core/assets/storage-icon.png" alt="photo">
       5GB of free <br>storage space</td>
-    <td>Download music to play when you are not connected</td>
-    <td></td>
-    <td><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
+    <td class="borded">Download music to play when you are not connected</td>
+    <td class="borded"></td>
+    <td class="borded"><img id="check" src="../core/assets/check-icon.png" alt="photo"></td>
   </tr>
   <tr class="row9">
     <td>Skip as many songs as you want</td>
@@ -171,7 +171,7 @@
 <button id="home" onclick="myFunction()">Sign up free</button>
 <div class="lastdiv">
       <h2 id="lasth2">All your favorite apps on<br>all your favorite devices</h2>
-      <p id="lastp">2016 ACME DIVISION RESERVED</p>
+      <p id="lastp">&#169 2016 ACME DIVISION RESERVED</p>
       <img id="logogray" src="../core/assets/logo-gray.png" alt="photo">
       <img id="appstore" src="../core/assets/app-store.png" alt="photo">
       <img id="googlestore" src="../core/assets/google-play.png" alt="photo">

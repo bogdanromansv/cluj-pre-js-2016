@@ -1,5 +1,6 @@
 body{
-
+  width:auto;
+  height: auto;
   margin:0px;
 }
 
@@ -54,24 +55,28 @@ div.down{
 div.lastdiv{
   position: relative;
   background-color: #E5E5E5;
-  height:600px;
+  height:550px;
 
 }
  div.mleft{
       position: relative;
       float:left;
    margin-left: 200px;
+   width:auto;
  }
  div.mmid{
    position:relative;
    float:left;
    margin-left: 400px;
+   width:auto;
  }
 
  div.mright{
    position:relative;
    float:left;
    margin-left: 400px;
+   width: auto;
+
  }
 
 h1.home{
@@ -79,7 +84,7 @@ h1.home{
   color: white;
 }
 h1.mid4{
-  margin-left: 700px;
+  margin-left: 750px;
 }
 #logo{
   display: block;
@@ -124,15 +129,16 @@ p.pargalaxy{
   margin-left: 700px;
   margin-top: 250px;
   color:white;
-  font-size: large;
+  font-size: x-large;
 
   }
 
 h2.headgalaxy{
   position:absolute;
-  margin-left: 900px;
+  margin-left: 800px;
   margin-top: 70px;
   color:white;
+  font-size: xx-large;
 }
 #home{
   background-color: #63D1F4;
@@ -142,10 +148,12 @@ h2.headgalaxy{
   border:blue;
   width:15em;
   height: 3em;
-  margin-left: 700px;
+  margin-left: 750px;
   margin-top: 100px;
   margin-bottom: 50px;
-  -webkit-border-radius: 7px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0px 3px 3px #000000;
+
 }
 #hm1{
   position: absolute;
@@ -210,18 +218,33 @@ table{
   border-collapse:  collapse;
   width:50%;
   margin-left: 400px;
-  background-color: #E5E5FF;
+  background-color: #00FFFF	;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-
+  border-top:1px solid #63D1F4;
+  border-left: 1px solid #63D1F4;
+  border-right:1px solid #63D1F4;
+  border-bottom:1px solid #63D1F4;
 }
 table,th,td {
-  border: 3px solid #63D1F4;
+
+
+
+  }
+table,td{
 
 }
 
 tr{
   height: 50px;
+}
+tr.row1{
+  border-bottom:1px solid #63D1F4;
+
+}
+td.borded{
+  border-bottom:1px solid #63D1F4;
+
 }
 
 #devices{
@@ -256,3 +279,74 @@ tr{
   top:500px;
   left: 200px;
 }
+
+#robot{
+  position: absolute;
+  left:430px;
+}
+
+#hrobot{
+  position: absolute;
+  top:50px;
+  left:370px;
+  width:200px;
+}
+
+#probot{
+  position: absolute;
+  width: auto;
+  top:85px;
+  left:360px;
+  width:200px;
+}
+#chip{
+  position: absolute;
+  left:990px;
+
+}
+
+#hchip{
+  position: absolute;
+  left:900px;
+  top:50px;
+  width:300px;
+
+}
+
+#pchip{
+  position: absolute;
+  left:920px;
+  top:85px;
+  width:200px;
+}
+
+#case{
+  position: absolute;
+  left:110px;
+
+}
+
+#hcase{
+  position: absolute;
+  top:50px;
+  left:80px;
+  width:200px;
+}
+#pcase{
+  position: absolute;
+  left:45px;
+  top:85px;
+  width:200px;
+}
+ td.nocolor{
+   background-color: white;
+ }
+
+ tr.row1{
+   background-color: white;
+ }
+ #imgtbl{
+  float:left;
+   margin-left: 15px;
+   margin-bottom: 35px;
+ }
