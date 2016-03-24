@@ -286,7 +286,7 @@ div.playlisttitles{
     margin-top:10px;
 }
 
-div.song{
+#song{
   height:70px;
   width:670px;
   margin-left: auto;
@@ -343,7 +343,7 @@ margin-top:30px;
 
 #songleft{
   float:left;
-  background:blue;
+
   height:64px;
   margin-left: 3px;
   margin-top: 3px;
@@ -351,9 +351,9 @@ margin-top:30px;
 
 }
 
-div.songright{
+#songright{
   float:right;
-  background:yellow;
+
   margin-top: 3px;
   margin-right:3px;
   height:64px;
@@ -361,9 +361,9 @@ div.songright{
 
 }
 
-div.songmid{
+#songmid{
   float:right;
-  background:green;
+
   margin-top: 3px;
   margin-right:5px;
   height:64px;
