@@ -13,16 +13,10 @@
             <img id="search" src="../core/assets/search-icon.png" alt="photo">
             <input type="search" name="googlesearch" placeholder="Search music">
 
-            <ul class="results" >
-			 <li><a href="">Search Result #1<br /><span>Description...</span></a></li>
-			 <li><a href="">Search Result #2<br /><span>Description...</span></a></li>
-	 		<li><a href="">Search Result #3<br /><span>Description...</span></a></li>
-         	<li><a href="">Search Result #4</a></li>
-		 </ul>
         </form>
         <img id="logomain" src="../core/assets/logo-top.png" alt="ACME logo top">
         <h2 id="h2main">Ready to listen to endless music<br>on your favorite device?</h2>
-        <h1 id="h1main">Epic and debauched party mixes</h1>
+        <h1 id="h1main"></h1>
         <button id="buttonS" onclick="myFunction3()">Sign in</button>
         <button id="buttonJ" onclick="jumpRegistration()">JOIN NOW</button>
 
@@ -67,29 +61,6 @@
 
         </div>
 
-        <div id="playlist2" >
-          <div class="close">
-            <button id="buttonCLOSE" onclick="hidePlaylist2()">
-                <span id="playlistCLOSE">CLOSE<span>
-                <span id="imgCLOSE"> <img id="X" src="../core/assets/close-icon.png"></span>
-            </button>
-
-          </div>
-          <div class="headerplaylist">
-            <img id="playlistimg" src="../core/assets/up-all-night-small.png">
-            <span id="headersmall"> Playing from:</span>
-            <span id="headerbig">Up all night: The remixes radio</span>
-          </div>
-          <div class="playlisttitles">
-            <span id="titleleft"> SONG</span>
-
-            <span id="titleright"> LISTENED</span>
-            <span id="titlemid"> LENGTH</span>
-          </div>
-          <div class="songs">
-          </div>
-        </div>
-
         <div id="playlist1" >
           <div class="close">
             <button id="buttonCLOSE" onclick="hidePlaylist1()">
@@ -111,12 +82,40 @@
             <span id="titlemid"> LENGTH</span>
 
           </div>
-          <div id="song">
+          <!-- <div id="song">
             <div id="songleft"></div>
             <div id="songright"></div>
             <div id="songmid"></div>
-          </div>
+          </div> -->
         </div>
+
+
+        <div id="playlist2" >
+          <div class="close">
+            <button id="buttonCLOSE" onclick="hidePlaylist2()">
+                <span id="playlistCLOSE">CLOSE<span>
+                <span id="imgCLOSE"> <img id="X" src="../core/assets/close-icon.png"></span>
+            </button>
+
+          </div>
+          <div class="headerplaylist">
+            <img id="playlistimg" src="../core/assets/up-all-night-small.png">
+            <span id="headersmall"> Playing from:</span>
+            <span id="headerbig">Up all night: The remixes radio</span>
+          </div>
+          <div class="playlisttitles">
+            <span id="titleleft"> SONG</span>
+
+            <span id="titleright"> LISTENED</span>
+            <span id="titlemid"> LENGTH</span>
+          </div>
+        <!-- <div id="song">
+            <div id="songleft"></div>
+            <div id="songright"></div>
+            <div id="songmid"></div>
+          </div> -->
+        </div>
+
 
         <div id="playlist3" >
           <div class="close">
@@ -136,10 +135,14 @@
 
             <span id="titleright"> LISTENED</span>
             <span id="titlemid"> LENGTH</span>
+          </div>
 
+          <div id="song">
+            <div id="songleft"></div>
+            <div id="songright"></div>
+            <div id="songmid"></div>
           </div>
-          <div class="songs">
-          </div>
+
         </div>
 
 
@@ -150,9 +153,15 @@
         <span id="spmain"> &#169 2016 ACME ALL RIGHTS RESERVED</span>
       </div>
 
+      <div id="footer">
+        
+      </div>
+
+
+      <script type="text/javascript" src="jquery-1.12.2.min.js"></script>
       <script type="text/javascript" src="anim.js"></script>
 
-
+      <script type="text/javascript" src="api.js"></script>
       <script type="text/javascript" src="playlist.js"></script>
 
    </body>
