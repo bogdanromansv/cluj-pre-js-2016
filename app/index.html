@@ -1,30 +1,18 @@
 <html>
   <head>
-    <script type="text/javascript">
-    function searchSel()
-    {
-      var input = document.getElementById('realtxt').value.toLowerCase(),
-          len = input.length,
-          output = document.getElementById('realitems').options;
-      for(var i=0; i<output.length; i++)
-        if (output[i].text.toLowerCase().slice(0, len) == input)
-          output[i].selected = true;
-      if (input == '')
-        output[0].selected = true;
-    }
-    </script>
+        <script src="http://backbonejs.org/test/vendor/underscore.js"></script>
+        <script src="http://backbonejs.org/test/vendor/jquery.js"></script>
+        <script src="http://backbonejs.org/docs/js/jquery.lazyload.js"></script>
+        <script src="http://backbonejs.org/backbone.js"></script>
+        <script type="text/javascript" src="songmodel.js"></script>
+        <script type="text/javascript" src="jquery-1.12.2.min.js"></script>
   </head>
   <body>
-    <form>
-      search <input type="text" id="realtxt" onkeyup="searchSel()">
-      <select id="realitems">
-        <option value="">select...</option>
-        <option value="1">Power hungry</option>
-        <option value="2">Super man</option>
-        <option value="3">Hyperactive</option>
-        <option value="4">Bored</option>
-        <option value="5">Human</option>
-      </select>
-    </form>
+      <div id="container"></div>
+
+      <p>Hello!</p>
+      <div id="page"></div>
+
+
   </body>
 </html>
