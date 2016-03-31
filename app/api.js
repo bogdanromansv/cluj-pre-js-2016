@@ -18,7 +18,7 @@
 
 
 
-var text = document.getElementById( 'h1main' ) ;
+var text = document.getElementById ('h1main');
 
 var object = {
     "success": {
@@ -44,20 +44,16 @@ var object = {
 }
 
 var jqxhr = $.getJSON( "http://quotes.rest/qod.json", function( ) {
-
-
 })
 
-  .done( function (  ) {
+  .done(function () {
 
     text.innerHTML = object.contents.quotes[0].quote ;
-
   })
 
-  .fail(function (  ) {
+  .fail(function () {
 
     text.innerHTML = object.contents.quotes[0].quote ;
-
   })
 
 
@@ -76,7 +72,7 @@ var jqxhr = $.getJSON( "http://quotes.rest/qod.json", function( ) {
 
      error: function (xhr, ajaxOptions, thrownError) {
 
-        
+
 
      }
 

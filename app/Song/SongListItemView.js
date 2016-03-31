@@ -9,3 +9,6 @@ var SongListItemView = Backbone.View.extend({
     return this;
   }
 });
+
+
+export { SongListItemView };

@@ -1,47 +1,42 @@
-function AccountService(){
+function AccountService() {
   this.persons = [];
-  this.accountStatus = "";
-
+  this.accountStatus = '';
 }
 
-AccountService.prototype={
+AccountService.prototype = {
 
-  getPersons:function(){
+  getPersons: function() {
     return this.persons;
   },
 
-  setPersons:function(persons){
-    this.persons=persons;
+  setPersons:function (persons) {
+    this.persons = persons;
   },
 
-  getAccountStatus:function(){
+  getAccountStatus:function () {
     return this.accountStatus;
   },
 
-  setAccountStatus:function(accountStatus){
-    this.accountStatus="";
+  setAccountStatus: function(accountStatus) {
+    this.accountStatus='';
   },
 
-
 };
 
-  var loadingWnd;
+var loadingWnd;
 
-function openWindow(url){
+function openWindow(url) {
 
-  if(loadingWnd === undefined){
-
-    loadingWnd = window.open(url,'myFrame');}
-
-  else {
-
-    loadingWnd.focus();
+  if (loadingWnd === undefined) {
+    loadingWnd = window.open(url, 'myFrame');
   }
 
+  else {
+    loadingWnd.focus();
+  }
 };
 
-function LogIn(){
-
+function LogIn() {
   var usersJSON = '[{"userName":"combs","email":"kathycombs@quailcom.com","password":"orkman5951"},{"userName":"whitley","email":"kathywhitley@quailcom.com","password":"inson2079"},{"userName":"fletcher","email":"kathyfletcher@quailcom.com","password":"rederick8363"}]';
   var users = JSON.parse(usersJSON);
   var userObj = { email: "", password: "" };
@@ -51,10 +46,10 @@ function LogIn(){
   userObj.email = emailIntroduced;
   userObj.password = passIntroduced;
 
-  for (var i=0; i<users.length; i++){
+  for (var i=0; i < users.length; i++){
 
         console.log(userObj);
-      if (users[i].email===userObj.email && users[i].password===userObj.password){
+      if (users[i].email === userObj.email && users[i].password===userObj.password){
 
 
           return openWindow("file:///home/bogdan.roman/work/cluj-pre-js-2016/app/main.html");
