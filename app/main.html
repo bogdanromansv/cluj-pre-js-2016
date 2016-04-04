@@ -71,7 +71,7 @@
         </div>
 
         <div id="playlist1" >
-          <div class="close">
+           <div class="close">
             <button id="buttonCLOSE" onclick="hidePlaylist1()">
                 <span id="playlistCLOSE">CLOSE<span>
                 <span id="imgCLOSE"> <img id="X" src="../core/assets/close-icon.png"></span>
@@ -91,11 +91,30 @@
             <span id="titlemid"> LENGTH</span>
 
           </div>
-          <!-- <div id="song">
-            <div id="songleft"></div>
-            <div id="songright"></div>
-            <div id="songmid"></div>
-          </div> -->
+
+          <script type="text/template" id="song-list-view">
+            <img src=<%= image %> />
+            <span class="name"><%= name %></span>
+            <span class="songAuthor"><%= songAuthor %></span>
+            <span class="songLength"><%= songLength %></span>
+            <span class="songListened"><%= songListened %></span>
+          </script>
+
+          <div id="songs">
+          </div>
+
+
+        <script>
+          $(function Music() {
+          var songsJSON = '[{"image":"../core/assets/2015-best-music.png","name":"love love enemies love","songAuthor":"Smiley","songLength":74,"songListened":82},{"image":"../core/assets/2015-best-music.png","name":"love love enemies pierdut","songAuthor":"Dr. Dre","songLength":186,"songListened":78},{"image":"../core/assets/2015-best-music.png","name":"ea money pierdut ea","songAuthor":"Andra","songLength":303,"songListened":94},{"image":"../core/assets/2015-best-music.png","name":"enemies el buletin ea","songAuthor":"Andra","songLength":359,"songListened":23},{"image":"../core/assets/2015-best-music.png","name":"buletin el buletin love","songAuthor":"Eminem","songLength":312,"songListened":11},{"image":"../core/assets/2015-best-music.png","name":"pierdut pierdut enemies ea","songAuthor":"Eminem","songLength":37,"songListened":9},{"image":"../core/assets/2015-best-music.png","name":"ea money enemies enemies","songAuthor":"Dr. Dre","songLength":325,"songListened":13},{"image":"../core/assets/2015-best-music.png","name":"enemies money el money","songAuthor":"Eminem","songLength":58,"songListened":10}]';
+          const playlist1 = new SongCollection(JSON.parse(songsJSON));
+
+          const songListView = new SongListView({ collection: playlist1 });
+          songListView.render();
+          $('#songs').append(songListView.el);
+          });
+        </script>
+
         </div>
 
 
@@ -118,11 +137,25 @@
             <span id="titleright"> LISTENED</span>
             <span id="titlemid"> LENGTH</span>
           </div>
-        <!-- <div id="song">
-            <div id="songleft"></div>
-            <div id="songright"></div>
-            <div id="songmid"></div>
-          </div> -->
+
+          <div id="songs2">
+          </div>
+
+
+        <script>
+          $(function Music() {
+          var songsJSON = '[{"image":"../core/assets/2015-best-music.png","name":"love love enemies love","songAuthor":"Smiley","songLength":74,"songListened":82},{"image":"../core/assets/2015-best-music.png","name":"love love enemies pierdut","songAuthor":"Dr. Dre","songLength":186,"songListened":78},{"image":"../core/assets/2015-best-music.png","name":"ea money pierdut ea","songAuthor":"Andra","songLength":303,"songListened":94},{"image":"../core/assets/2015-best-music.png","name":"enemies el buletin ea","songAuthor":"Andra","songLength":359,"songListened":23},{"image":"../core/assets/2015-best-music.png","name":"buletin el buletin love","songAuthor":"Eminem","songLength":312,"songListened":11},{"image":"../core/assets/2015-best-music.png","name":"pierdut pierdut enemies ea","songAuthor":"Eminem","songLength":37,"songListened":9},{"image":"../core/assets/2015-best-music.png","name":"ea money enemies enemies","songAuthor":"Dr. Dre","songLength":325,"songListened":13},{"image":"../core/assets/2015-best-music.png","name":"enemies money el money","songAuthor":"Eminem","songLength":58,"songListened":10}]';
+          const playlist1 = new SongCollection(JSON.parse(songsJSON));
+
+          const songListView = new SongListView({ collection: playlist1 });
+          songListView.render();
+          $('#songs2').append(songListView.el);
+          });
+        </script>
+
+
+
+
         </div>
 
 
@@ -146,11 +179,23 @@
             <span id="titlemid"> LENGTH</span>
           </div>
 
-          <div id="song">
-            <div id="songleft"></div>
-            <div id="songright"></div>
-            <div id="songmid"></div>
+
+
+          <div id="songs3">
           </div>
+
+
+        <script>
+          $(function Music() {
+          var songsJSON = '[{"image":"../core/assets/2015-best-music.png","name":"love love enemies love","songAuthor":"Smiley","songLength":74,"songListened":82},{"image":"../core/assets/2015-best-music.png","name":"love love enemies pierdut","songAuthor":"Dr. Dre","songLength":186,"songListened":78},{"image":"../core/assets/2015-best-music.png","name":"ea money pierdut ea","songAuthor":"Andra","songLength":303,"songListened":94},{"image":"../core/assets/2015-best-music.png","name":"enemies el buletin ea","songAuthor":"Andra","songLength":359,"songListened":23},{"image":"../core/assets/2015-best-music.png","name":"buletin el buletin love","songAuthor":"Eminem","songLength":312,"songListened":11},{"image":"../core/assets/2015-best-music.png","name":"pierdut pierdut enemies ea","songAuthor":"Eminem","songLength":37,"songListened":9},{"image":"../core/assets/2015-best-music.png","name":"ea money enemies enemies","songAuthor":"Dr. Dre","songLength":325,"songListened":13},{"image":"../core/assets/2015-best-music.png","name":"enemies money el money","songAuthor":"Eminem","songLength":58,"songListened":10}]';
+          const playlist1 = new SongCollection(JSON.parse(songsJSON));
+
+          const songListView = new SongListView({ collection: playlist1 });
+          songListView.render();
+          $('#songs3').append(songListView.el);
+          });
+        </script>
+
 
         </div>
 

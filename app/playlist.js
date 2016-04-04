@@ -55,24 +55,27 @@ function populate1 () {
 
 
   var myDiv = document.getElementById("song");
- document.getElementById('songleft').innerHTML = "<span>" + play[0].songs[0].songTitle +" <br> "+ play[0].songs[0].songAuthor + "</span>";
- document.getElementById('songmid').innerHTML = "<span>" + play[0].songs[0].songLength + "</span>" ;
- document.getElementById('songright').innerHTML = "<span>" + play[0].songs[0].songListened + "</span>" ;
+ // document.getElementById('songleft').innerHTML = "<span>" + play[0].songs[0].songTitle +" <br> "+ play[0].songs[0].songAuthor + "</span>";
+ // document.getElementById('songmid').innerHTML = "<span>" + play[0].songs[0].songLength + "</span>" ;
+ // document.getElementById('songright').innerHTML = "<span>" + play[0].songs[0].songListened + "</span>" ;
 
 
  for ( var i = 1; i < play[0].songs.length + 1; i++) {
 
-  var myDiv = document.getElementById("song");
+   var myDiv = document.getElementById("song");
    var divClone = myDiv.cloneNode(true);
    playlist1.appendChild(divClone);
 
 
-  document.getElementById('songleft').innerHTML = "<span>" + play[0].songs[i].songTitle +" <br> "+ play[0].songs[i].songAuthor + "</span>";
-  document.getElementById('songmid').innerHTML = "<span>" + play[0].songs[i].songLength + "</span>" ;
-  document.getElementById('songright').innerHTML = "<span>" + play[0].songs[i].songListened + "</span>" ;
 
-     }
-   }
+
+
+
+  // document.getElementById('songleft').innerHTML = "<span>" + play[0].songs[i].songTitle +" <br> "+ play[0].songs[i].songAuthor + "</span>";
+  // document.getElementById('songmid').innerHTML = "<span>" + play[0].songs[i].songLength + "</span>" ;
+  // document.getElementById('songright').innerHTML = "<span>" + play[0].songs[i].songListened + "</span>" ;
+ }
+}
 
 
    function populate2 () {
@@ -113,7 +116,7 @@ function populate1 () {
        document.getElementById('songright').innerHTML = "<span>" + play[2].songs[0].songListened + "</span>" ;
 
 
-       for( var i = 1; i < play[2].songs.length+1; i++){
+       for( var i = 1; i < play[2].songs.length + 1; i++){
 
         var myDiv = document.getElementById("song");
          var divClone = myDiv.cloneNode(true);
@@ -128,6 +131,7 @@ function populate1 () {
          }
 
 
-populate1();
+//populate1();
+
 //populate2();
 //populate3();
