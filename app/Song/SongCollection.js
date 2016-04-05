@@ -1,4 +1,4 @@
-//import { SongModel } from './Song/SongModel.js';
+// import { SongModel } from './Song/SongModel.js';
 
 
 const SongCollection = Backbone.Collection.extend({
@@ -18,8 +18,9 @@ const SongCollection = Backbone.Collection.extend({
 
 const SongsCollection = new SongCollection();
 SongsCollection.fetch({
-	success(SongsCollection){
+  success(SongsCollection){
 		console.log(SongsCollection.toJSON());
 	}
 });
-//export { SongCollection };
+
+// export { SongCollection };
